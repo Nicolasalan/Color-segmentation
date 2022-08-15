@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>Color-segmentation</name>
+  <name>Color-Segmentation</name>
   <version>0.0.0</version>
-  <description>The Color-segmentation package</description>
+  <description>The Color-Segmentation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
