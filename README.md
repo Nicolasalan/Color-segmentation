@@ -21,7 +21,7 @@ cd src
 source devel/setup.bash
 catkin_make
 ```
-Para iniciar o node e o servico, com o comando abaixo.
+**Para iniciar o node e o servico.**
 ```
 Inicia o serviço de segmentação:
 rosrun Color-segmentation blob_detection
