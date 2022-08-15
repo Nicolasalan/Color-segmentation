@@ -22,8 +22,9 @@ source devel/setup.bash
 catkin_make
 ```
 **Para iniciar o node e o servico.**
-```
+
 Inicia o serviço de segmentação:
+```
 rosrun Color-segmentation blob_detection
 ```
 Inicia o node de visualização:
