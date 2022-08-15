@@ -11,7 +11,7 @@ pip install hsv-calibration
 ```
 Assim que calibrar o pacote,  executar os comandos.
 ```
-git clone https://github.com/Nicolasalan/Color-segmentation.git
+git clone https://github.com/Nicolasalan/Color-Segmentation.git
 cd Color-segmentation
 pip3 install -r requirements.txt
 ```
