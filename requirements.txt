@@ -1,5 +1,5 @@
 rospy
-cv2
+opencv-python
 numpy
-os
+os-sys
 imutils
