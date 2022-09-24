@@ -22,6 +22,7 @@ class ColorFilter():
         self.rate = rospy.Rate(5)
         self.lower_points = rospy.get_param('~lower', '')
         self.upper_points = rospy.get_param('~upper', '')
+        os.system("v4l2-ctl -d /dev/video0 -c brightness=100")
 
         self.bridge_object = CvBridge()
         rospy.loginfo("Start camera suscriber...")
@@ -61,8 +62,8 @@ class ColorFilter():
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
         # red color boundaries [B, G, R]
-        lower = self.lower_points
-        upper = self.upper_points
+        lower = []
+        upper = []
 
         # create NumPy arrays from the boundaries
         lower = np.array(lower, dtype="uint8")
