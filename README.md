@@ -6,6 +6,10 @@ Esse repositório é um pacote no ROS 1 que implementa um segmentador de cores. 
 
 Antes de executar o pacote, primeiro tem que calibrar a segmentação para o seu caso de uso, para isso utilizo o https://github.com/abhisavaliya/hsv_calibration/.
 
+* ROS Noetic
+* Ubuntu 20.04
+* Python 3.8
+
 ```
 pip install hsv-calibration 
 ```
