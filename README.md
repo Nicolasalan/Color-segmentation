@@ -9,6 +9,9 @@ Antes de executar o pacote, primeiro tem que calibrar a segmentação para o seu
 * ROS Noetic
 * Ubuntu 20.04
 * Python 3.8
+* Numpy
+* Imutils
+* Opencv-python 4.6
 
 ```
 pip install hsv-calibration 
