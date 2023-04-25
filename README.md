@@ -1,10 +1,10 @@
-# Color Segmentation
+# Color segmentation
 
-Esse repositório é um pacote no ROS 1 que implementa um segmentador de cores. Esse pacote possui uma interface com ROS para visualização da segmentação e um serviço para que somente mostra o centroide da segmentação.
+This repository is a package in ROS 1 that implements a color segmenter. This package has an interface with ROS to visualize the segmentation and a service so that it only shows the centroid of the segmentation.
 
-**Requisitos**
+**Requirements**
 
-Antes de executar o pacote, primeiro tem que calibrar a segmentação para o seu caso de uso, para isso utilizo o https://github.com/abhisavaliya/hsv_calibration/.
+Before executing the package, you first have to calibrate the segmentation for your use case, for that I use the [repository](https://github.com/abhisavaliya/hsv_calibration/).
 
 * ROS Noetic
 * Ubuntu 20.04
@@ -16,25 +16,25 @@ Antes de executar o pacote, primeiro tem que calibrar a segmentação para o seu
 ```
 pip install hsv-calibration 
 ```
-Assim que calibrar o pacote,  executar os comandos.
+Once you calibrate the package, run the commands.
 ```
 git clone https://github.com/Nicolasalan/Color-Segmentation.git
 cd Color-segmentation
 pip3 install -r requirements.txt
 ```
-Depois de instalar o pacote, compilar com o comando abaixo.
+After installing the package, compile with the command below.
 ```
 cd src
 source devel/setup.bash
 catkin_make
 ```
-**Para iniciar o node e o servico.**
+**To start the node and service.**
 
-Inicia o serviço de segmentação:
+Starts the segmentation service:
 ```
 rosrun Color-segmentation blob_detection
 ```
-Inicia o node de visualização:
+Start the view node:
 ```
 rosrun Color-segmentation blob_visualize
 ```
